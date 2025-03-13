@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTask App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li id="home">Home</li>
+                <li class="indisponible" id="showTask">Tasks</li>
+                <li class="indisponible" id="calendarBtn">Calendar</li>
+                <li id="setting">Settings</li>
+            </ul>
+        </nav>
+    </div>
+    <section id="home" class="sect">
+        <h1>On Task</h1>
+        <div id="taskInputContainer">
+            <input type="text" id="newTaskInput" placeholder="Add a new task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+
+    <div id="settings" class="modal">
+        <button id="darkModeToggle">Dark Mode</button>
+        <button id="close" class="close">Close</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
